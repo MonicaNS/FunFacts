@@ -13,8 +13,11 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:padding="50dp"
+    android:id="@+id/relativeLayout"
     tools:context=".FunFactActivity">
     <!-- The padding was added to indent all the tools relatively to the view-->
+    <!--This id line was added so I could use the object of RelativeLayout for changing the background color -->
+
 
     <TextView
         android:layout_width="wrap_content"
