@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- It was a constraintLayout and I changed it to relative layout. Also, sometimes commenting inside the layout
+   might give you error. And the lines of code associated with the Did you know text view that was related to the
+   constraining the text view (since constraint layout), were deleted-->
+
+<!-- The default actionBar was removed in res -> values -> styles -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:padding="50dp"
+    tools:context=".FunFactActivity">
+    <!-- The padding was added to indent all the tools relatively to the view-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Did you know?"
+        android:textColor="#80FFFFFF"
+        android:textSize="24sp" />
+    <!--The color of text was set to 50% transparent by changing the alpha value of it from 255 in the beginning to the 128. Which gave the hex number of 80 instead of the first FF. Now regardless of background, the white text would show.-->
+
+
+    <!--The id's tp the following textView and button was changed by right click and refactor. -->
+    <TextView
+        android:id="@+id/factTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Ants stretch when they wake up in the morning."
+        android:textColor="#80FFFFFF"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/showFactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="17dp"
+        android:text="Show another fun fact" />
+
+</RelativeLayout>
+
+<!-- Some notes jotted down here for future reference
+
+1- Difference between dp, sp and more in android
+https://stackoverflow.com/questions/2025282/what-is-the-difference-between-px-dip-dp-and-sp/2025541#2025541
+
+2- Different layouts in android studio
+https://developer.android.com/guide/topics/ui/declaring-layout.html
+
+3- Android styles and themes (theme was changed in styles for removing the default action bar)
+https://developer.android.com/guide/topics/ui/look-and-feel/themes
+
+
+-->
