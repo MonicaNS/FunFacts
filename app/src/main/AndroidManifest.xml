@@ -6,7 +6,6 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".FunFactActivity">
@@ -19,3 +18,10 @@
     </application>
 
 </manifest>
+
+<!--And for each mipmap resolution there was a  ic_launcher_round.png file given to us by android studio. You can specify both round and square icons for
+ android studio folders. But for this project we only had square icons therefore, we deleted each of those folders and updated the manifest file
+ as well by deleting the line below under the application tag.
+ android:roundIcon="@mipmap/ic_launcher_round"
+
+ -->

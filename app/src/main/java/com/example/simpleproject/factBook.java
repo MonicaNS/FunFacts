@@ -11,7 +11,7 @@ public class factBook {
        List<String> randomFacts = new ArrayList<>();
        randomFacts.add("Ostriches can run faster than horses.");
        randomFacts.add("Olympic gold medals are mostly made from silver");
-       randomFacts.add("Mammoths still walked the earth when the Great. Pyramid was being built.");
+       randomFacts.add("Mammoths still walked the earth when the Great Pyramid was being built.");
        randomFacts.add("You are born with 300 bones; by the time you are an adult you will have 206.");
        randomFacts.add("It takes about 8 minutes for light from the Sun to reach Earth.");
        randomFacts.add("Some bamboo plants can grow almost a meter in just one day.");

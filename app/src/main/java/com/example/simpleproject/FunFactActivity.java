@@ -43,3 +43,15 @@ public class FunFactActivity extends AppCompatActivity {
         showFactButton.setOnClickListener(listener); //By ctrl+Q on this method we found out that the parameter should be of view type. Therefore, we wrote the func above View.OnClickListener.
     }
 }
+/**
+ Icon of the folder is under res -> mipmap folder. And the different suffixes represent the different resolutions for different devices.
+ If we dont provide all the different resolutions, the android studio scale them according to the device in use.
+ Whereas if it was an image, it would be under drawable
+
+
+ And for each mipmap resolution there was a  ic_launcher_round.png file given to us by android studio. You can specify both round and square icons for
+ android studio folders. But for this project we only had square icons therefore, we deleted each of those folders and updated the manifest file
+ as well by deleting the line below under the application tag.
+ android:roundIcon="@mipmap/ic_launcher_round"
+
+ **/
